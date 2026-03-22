@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(yarn add:*)",
+      "Bash(timeout 5 node app.js)",
+      "Bash(node:*)"
+    ]
+  }
+}
