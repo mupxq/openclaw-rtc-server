@@ -205,7 +205,7 @@ function buildVoiceChatConfig(agent) {
         HistoryLength: 0,
         ExtraHeader: {
           'x-openclaw-agent-id': agent.agent_id,
-          'x-openclaw-session-key': agent.room_id
+          'x-openclaw-session-key': `agent:${agent.agent_id}:${agent.room_id}`
         },
         VisionConfig: { Enable: false },
         Feature: '{"Http":true}'
